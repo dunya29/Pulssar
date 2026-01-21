@@ -1,0 +1,40 @@
+.tooltip {
+    font-size: 12px;
+    line-height: 1.4;
+    position: relative;
+    opacity: 0;
+    display: none;
+    padding: 5px 0;
+}
+
+.tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+    border-top-color: #F2DEDE;
+    left: 20px;
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    border-width: 5px 5px 0;
+    border-top-color: #F2DEDE;
+}
+
+.tooltip-inner {
+    width: 100%;
+    max-width: 300px;
+    padding: 3px 8px;
+    color: #A94442;
+    text-align: center;
+    border-radius: 4px;
+    background: #F2DEDE;
+
+}
+
+.form-group.error .tooltip{
+    opacity: 1;
+    display: block;
+}

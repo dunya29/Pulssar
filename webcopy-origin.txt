@@ -1,0 +1,320 @@
+Uri: https://mc.yandex.ru/watch/73185025
+File Name: C:\Downloaded Web Sites\pulssar.ru\watch\73185025
+Content Type: image/gif
+
+Uri: https://pulssar.ru/bitrix/cache/css/s1/pulssar/template_dafb7165b1cb0d8144ff47df00ceb2ce/template_dafb7165b1cb0d8144ff47df00ceb2ce_v1.css?1763981440620635
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\cache\css\s1\pulssar\template_dafb7165b1cb0d8144ff47df00ceb2ce\template_dafb7165b1cb0d8144ff47df00ceb2ce_v1.css
+Content Type: text/css
+
+Uri: https://pulssar.ru/bitrix/components/slam/easyform/lib/js/bootstrap.min.js?16298957857670
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\components\slam\easyform\lib\js\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/components/slam/easyform/lib/js/bootstrapValidator.min.js?1629895785103245
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\components\slam\easyform\lib\js\bootstrapValidator.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/components/slam/easyform/lib/js/inputmask.js?1629895785177292
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\components\slam\easyform\lib\js\inputmask.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/components/slam/easyform/script.js?162989578515074
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\components\slam\easyform\script.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/components/unkle/search.title/script.js?16311161409907
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\components\unkle\search.title\script.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/main/core/core.min.js?1756786977229643
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\main\core\core.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/main/core/core_dd.min.js?16298957822188
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\main\core\core_dd.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/main/core/core_frame_cache.min.js?175678696310481
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\main\core\core_frame_cache.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/main/core/core_fx.min.js?16298957829768
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\main\core\core_fx.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/main/core/core_ls.min.js?17359066872683
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\main\core\core_ls.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/main/file_upload_agent.min.js?167630977911715
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\main\file_upload_agent.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/main/jquery/jquery-3.6.0.min.js?172493509189501
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\main\jquery\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/main/popup/dist/main.popup.bundle.min.css?175678694028056
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\main\popup\dist\main.popup.bundle.min.css
+Content Type: text/css
+
+Uri: https://pulssar.ru/bitrix/js/main/popup/dist/main.popup.bundle.min.js?176398143467480
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\main\popup\dist\main.popup.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/pull/client/pull.client.min.js?174852434549849
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\pull\client\pull.client.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/pull/protobuf/model.min.js?162989578414190
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\pull\protobuf\model.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/pull/protobuf/protobuf.min.js?162989578476433
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\pull\protobuf\protobuf.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/rest/client/rest.client.min.js?16298957849240
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\rest\client\rest.client.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/ui/design-tokens/dist/ui.design-tokens.min.css?172493646023463
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\ui\design-tokens\dist\ui.design-tokens.min.css
+Content Type: text/css
+
+Uri: https://pulssar.ru/bitrix/js/ui/dexie/dist/dexie.bundle.min.js?1756786961102530
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\ui\dexie\dist\dexie.bundle.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/bitrix/js/yandex.metrika/script.js?17359064736603
+File Name: C:\Downloaded Web Sites\pulssar.ru\bitrix\js\yandex.metrika\script.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/catalog/torshery/dome-fl/
+File Name: C:\Downloaded Web Sites\pulssar.ru\catalog\torshery\dome-fl\index.htm
+Content Type: text/html
+
+Uri: https://pulssar.ru/local/components/dev/form/templates/oneclick/script.js?17613004293769
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\components\dev\form\templates\oneclick\script.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/components/bitrix/catalog/catalogNew/bitrix/catalog.element/.default/script.js?17641452693765
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\components\bitrix\catalog\catalogNew\bitrix\catalog.element\.default\script.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/components/bitrix/sale.basket.basket.line/basketSmall/script.min.js?17495680963876
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\components\bitrix\sale.basket.basket.line\basketSmall\script.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/components/slam/easyform/imgForm/bitrix/main.file.input/drag_n_drop/script.min.js?174956809617032
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\components\slam\easyform\imgForm\bitrix\main.file.input\drag_n_drop\script.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/advantages/1.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\advantages\1.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/advantages/2.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\advantages\2.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/advantages/3.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\advantages\3.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/advantages/4.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\advantages\4.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/favicon/Favicon_ng.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\favicon\Favicon_ng.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/header-cart.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\header-cart.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/header-catalog.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\header-catalog.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/header-heart.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\header-heart.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/header-search.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\header-search.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/header-user.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\header-user.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/logo-2.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/official-warranty.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\official-warranty.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/payment-methods/mastercard.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\payment-methods\mastercard.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/payment-methods/mir.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\payment-methods\mir.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/payment-methods/visa.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\payment-methods\visa.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/payment-methods/ya_pay.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\payment-methods\ya_pay.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/payment-methods/ya_split.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\payment-methods\ya_split.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/puff.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\puff.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/quality-certificate.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\quality-certificate.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/img/star-no-fill.svg
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\img\star-no-fill.svg
+Content Type: image/svg+xml
+
+Uri: https://pulssar.ru/local/templates/pulssar/js/custom.min.js?1761302286926
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\js\custom.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/js/fancybox.umd.js?1749568096105639
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\js\fancybox.umd.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/js/readmore.min.js?17574316634437
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\js\readmore.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/js/script.min.js?17574316635495
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\js\script.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/js/scriptNew.min.js?176414526956136
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\js\scriptNew.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/js/swiper-bundle.min.js?1749568096151701
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\js\swiper-bundle.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/js/uikit-icons.js?174956809684584
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\js\uikit-icons.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/local/templates/pulssar/js/uikit.min.js?1757431663135663
+File Name: C:\Downloaded Web Sites\pulssar.ru\local\templates\pulssar\js\uikit.min.js
+Content Type: application/javascript
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/iblock/51e/csndc2hz91hvxzwk7jb9htneo3ma2g1i.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\iblock\51e\csndc2hz91hvxzwk7jb9htneo3ma2g1i.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/iblock/c78/mn2jhlcyccjfqv5fq625h0zfdeqrccdv.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\iblock\c78\mn2jhlcyccjfqv5fq625h0zfdeqrccdv.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/iblock/cb2/jgahs432jl9mmdaa2bspj897tpw68o45.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\iblock\cb2\jgahs432jl9mmdaa2bspj897tpw68o45.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/iblock/dc1/20ahsr0dr8t5j3d9u04kpw02pzv3tc4w.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\iblock\dc1\20ahsr0dr8t5j3d9u04kpw02pzv3tc4w.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/images/icon_camera.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\images\icon_camera.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/images/whatsapp.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\images\whatsapp.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/242/650_650_2/smweozj28uvn1xzmes8wv9edyeela22u.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\242\650_650_2\smweozj28uvn1xzmes8wv9edyeela22u.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/456/650_650_2/zjxeak4tj74hm46cnjkmn9iu281z28m3.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\456\650_650_2\zjxeak4tj74hm46cnjkmn9iu281z28m3.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/51f/760_760_19ce1968c4ce898b77ba8afe61c33cff3/mmmm8i6fgxwu4w4csf2w74d49q6pbpc7.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\51f\760_760_19ce1968c4ce898b77ba8afe61c33cff3\mmmm8i6fgxwu4w4csf2w74d49q6pbpc7.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/547/760_760_19ce1968c4ce898b77ba8afe61c33cff3/itz02j7dbc817gly30e6fw75ac71lwpq.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\547\760_760_19ce1968c4ce898b77ba8afe61c33cff3\itz02j7dbc817gly30e6fw75ac71lwpq.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/5ff/650_650_2/6t5w8sq0j9eax0prq3xjjt1ueakl6wkp.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\5ff\650_650_2\6t5w8sq0j9eax0prq3xjjt1ueakl6wkp.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/721/760_760_19ce1968c4ce898b77ba8afe61c33cff3/n2f932vl64basplwe1x7uthum7c9xdnm.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\721\760_760_19ce1968c4ce898b77ba8afe61c33cff3\n2f932vl64basplwe1x7uthum7c9xdnm.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/747/760_760_19ce1968c4ce898b77ba8afe61c33cff3/vtt6qirydpq2jc1o1q3xayqe57nwdzpo.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\747\760_760_19ce1968c4ce898b77ba8afe61c33cff3\vtt6qirydpq2jc1o1q3xayqe57nwdzpo.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/781/760_760_19ce1968c4ce898b77ba8afe61c33cff3/kz83w5rm4u7wiqmyzlfjowta1lpckvjm.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\781\760_760_19ce1968c4ce898b77ba8afe61c33cff3\kz83w5rm4u7wiqmyzlfjowta1lpckvjm.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/89c/650_650_2/2h1th2sc9lz5r2fr5f81rmpaaulfam6b.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\89c\650_650_2\2h1th2sc9lz5r2fr5f81rmpaaulfam6b.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/9dd/760_760_19ce1968c4ce898b77ba8afe61c33cff3/ztndbpjg262jm6358thvzm81rowm7g4g.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\9dd\760_760_19ce1968c4ce898b77ba8afe61c33cff3\ztndbpjg262jm6358thvzm81rowm7g4g.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/b97/760_760_19ce1968c4ce898b77ba8afe61c33cff3/ev8170ejkwhc90mchixvm2eyonn1bvbv.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\b97\760_760_19ce1968c4ce898b77ba8afe61c33cff3\ev8170ejkwhc90mchixvm2eyonn1bvbv.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c0c/760_760_19ce1968c4ce898b77ba8afe61c33cff3/v7nucle8yes89xydjalywg2ifznnmyn8.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\c0c\760_760_19ce1968c4ce898b77ba8afe61c33cff3\v7nucle8yes89xydjalywg2ifznnmyn8.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c78/760_760_19ce1968c4ce898b77ba8afe61c33cff3/mn2jhlcyccjfqv5fq625h0zfdeqrccdv.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\c78\760_760_19ce1968c4ce898b77ba8afe61c33cff3\mn2jhlcyccjfqv5fq625h0zfdeqrccdv.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/c80/760_760_19ce1968c4ce898b77ba8afe61c33cff3/qx7kif5j4pafc2r6dou6r5ol1wdcdjtz.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\c80\760_760_19ce1968c4ce898b77ba8afe61c33cff3\qx7kif5j4pafc2r6dou6r5ol1wdcdjtz.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/d46/760_760_19ce1968c4ce898b77ba8afe61c33cff3/5o9wtxs5intwjqekkx91iqsyktrk3imv.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\d46\760_760_19ce1968c4ce898b77ba8afe61c33cff3\5o9wtxs5intwjqekkx91iqsyktrk3imv.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/df2/650_650_2/a7jjsd38nan7u8r6q7670iddykxunb6s.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\df2\650_650_2\a7jjsd38nan7u8r6q7670iddykxunb6s.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e20/760_760_19ce1968c4ce898b77ba8afe61c33cff3/9sagt3shv08itswi22v05cii3iqypmdu.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\e20\760_760_19ce1968c4ce898b77ba8afe61c33cff3\9sagt3shv08itswi22v05cii3iqypmdu.webp
+Content Type: image/webp
+
+Uri: https://pulssar.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/e8c/650_650_2/pl2ozeq9ck0xe4yn5d6v8980lf0i9xg9.webp
+File Name: C:\Downloaded Web Sites\pulssar.ru\upload\dev2fun.imagecompress\webp\resize_cache\iblock\e8c\650_650_2\pl2ozeq9ck0xe4yn5d6v8980lf0i9xg9.webp
+Content Type: image/webp
+

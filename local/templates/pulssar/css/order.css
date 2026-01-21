@@ -1,0 +1,106 @@
+.order-p {
+    padding: 0;
+}
+.order-p .userData {
+    word-break: break-word;
+}
+.sale-order-detail-order-item-title {
+    font: 16px;
+}
+.order-tables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.order-tables table {
+    width: 100%;
+    display: block;
+}
+.order-tables table thead,
+.order-tables table tbody {
+    display: table;
+    width: 100%;
+}
+.order-tables table tr {
+    width: 100% !important;
+    height: auto !important;
+    padding: 16px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    border-top: 1px solid #E1E0E0;
+    border-bottom: 1px solid #E1E0E0;
+    margin-bottom: -1px;
+}
+.order-tables table td:first-child {
+    color: #8C8C8C;
+    align-content: center;
+}
+.order-p__total {
+    padding-top: 10px;
+    border-top: 1px solid #E1E0E0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 24px;
+}
+.order-p__total .ya-pay-button {
+    border-radius: 30px !important;
+}
+.order-p__total .orderDetailSumm {
+    line-height: 1;
+    text-align: left;
+}
+.order-p__total .orderDetailSumm span {
+    display: block;
+    margin-top: 8px;
+}
+@media (max-width: 1500px) {
+    .sale-order-detail-order-item-title {
+        font: 14px;
+    }
+    .order-tables {
+        gap: 24px;
+    }
+    .order-tables tr {
+        padding: 12px 0;
+    }
+    .order-tables table td {
+        font-size: 14px;
+    }
+    .order-p__total .orderDetailSumm {
+        font-size: 14px;
+    }
+    .order-p__total .orderDetailSumm span {
+        font-size: 20px;
+    }
+}
+@media (max-width: 960px) {
+    .sale-order-detail-order-item-title {
+        font: 12px;
+    }
+    .order-tables {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .order-tables table:first-child tr:first-child {
+        border-top: 1px solid #E1E0E0;
+    }
+    .order-tables table tr {
+        border-top: none;
+        word-break: break-word;
+    }
+    .order-p__total {
+        justify-content: flex-start;
+        gap: 16px;
+    }
+}
+@media (max-width: 599px) {
+    .order-p .uk-grid {
+        margin-left: 0 !important;
+    }
+    .order-p .uk-grid>* {
+        padding-left: 0 !important;
+    }
+}
