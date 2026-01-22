@@ -8,7 +8,9 @@
         <link href="bitrix/js/main/popup/dist/main.popup.bundle.min.css?175678694028056" type="text/css" rel="stylesheet">
         <link href="bitrix/cache/css/s1/pulssar/template_dafb7165b1cb0d8144ff47df00ceb2ce/template_dafb7165b1cb0d8144ff47df00ceb2ce_v1.css?1763981440620635"
             type="text/css" data-template-style="true" rel="stylesheet">
-        <link rel="stylesheet" href="local/templates/pulssar/css/cart.css">
+        <link href="bitrix/cache/css/s1/pulssar/page_9c.css"
+            type="text/css" data-template-style="true" rel="stylesheet">
+        <link rel="stylesheet" href="local/templates/pulssar/css/order.css">
 
         <!-- Yandex.Metrika counter -->
 
@@ -75,310 +77,144 @@
 
     </head>
     <body class="design2024 innerPages">
+        <div class="uk-container">
+            <div class="bx-breadcrumb" itemprop="http://schema.org/breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+
+                    <a href="/" title="Главная" itemprop="item">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </div>
+                <div class="bx-breadcrumb-item" id="bx_breadcrumb_1" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <i data-uk-icon="icon: chevron-right; ratio: 0.6"></i>
+                    <a href="/catalog/" title="Каталог" itemprop="item">
+                        <span itemprop="name">Каталог</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </div>
+                <div class="bx-breadcrumb-item" id="bx_breadcrumb_2" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <i data-uk-icon="icon: chevron-right; ratio: 0.6"></i>
+                    <a href="/catalog/torshery/" title="Торшеры" itemprop="item">
+                        <span itemprop="name">Торшеры</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </div>
+                <div class="bx-breadcrumb-item">
+                    <i data-uk-icon="icon: chevron-right; ratio: 0.6"></i>
+                    <span>Торшер DOME FL</span>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
 
         <main class="main">
-            <section class="cart">
-                <h1 class="cart-title">Моя корзина</h1>
-
-                <div class="cart-container">
-                    <div class="cart-left-side">
-                        <div class="cart-left-side-head">
-                            <button type="button" class="cart-choice-all-button">
-                                <label class="custom-checkbox">
-                                    <input id="select-all" type="checkbox" name="all-choice" data-field="all-choice">
-                                    <span class="checkbox-box"></span>
-                                    Выбрать все
-                                </label>
-                            </button>
-
-                            <button class="clear-cart-btn" id="clear-cart-btn">
-                                Очистить корзину
-                            </button>
+            <div class="uk-container mb-100 order-p">
+                <div></div>
+                <h1>Заказ №834</h1>
+                <div data-uk-grid class="uk-grid">
+                    <div class="uk-width-expand uk-first-column">
+                        <h2>Информация о заказе</h2>
+                        <div class="order-p__tables">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Статус заказа</td>
+                                        <td>Принят, ожидается оплата</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Номер</td>
+                                        <td>834</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Дата оформления</td>
+                                        <td>29.08.2025</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <tbody>
+                                    <tr class="FIO">
+                                        <td>Ф.И.О.</td>
+                                        <td>тест тест </td>
+                                    </tr>
+                                    <tr class="EMAIL">
+                                        <td>E&#8209;Mail</td>
+                                        <td>kalyachkina.nadegda+1@yandex.ru </td>
+                                    </tr>
+                                    <tr class="PHONE">
+                                        <td>Телефон</td>
+                                        <td>79999999999 </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="cart-items">
-                            <div class="cart-item" data-item-id="1">
-                                <div class="cart-image">
-                                    <div class="cart-image-wrapper">
-                                        <button class="choice-item-btn">
-                                            <label class="custom-checkbox">
-                                                <input class="item-checkbox" type="checkbox" name="all-choice" data-field="all-choice">
-                                                <span class="checkbox-box"></span>
-                                            </label>
-                                        </button>
-                                        <img src="img/1.png" alt>
-                                    </div>
-                                </div>
-                                <div class="cart-item-info">
-                                    <div class="cart-item-info-top">
-                                        <div class="cart-item-desc">
-                                            <a href="#" class="cart-item-name">
-                                                Подвесная люстра VARDA (Количество ламп 3, цвет плафона желтый, цвет каркаса св.дерево, размер 85*35см)
-
+                        <h2>Состав заказа</h2>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-divider ordersTable">
+                                <thead>
+                                    <tr>
+                                        <th>Фото</th>
+                                        <th>Название</th>
+                                        <th>Цена</th>
+                                        <th>Количество</th>
+                                        <th>Сумма</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="sale-order-detail-order-item-img-block">
+                                            <a href="/catalog/lyustry/leeds-ring/">
+                                                <div class="sale-order-detail-order-item-img-container"
+                                                    style="background-image: url(img/1.png);"></div>
                                             </a>
-
-                                            <button class="delete-cart-item-btn">
-                                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M20.25 0.75L10.5 10.5M0.749999 20.25L10.5 10.5M10.5 10.5L0.749999 0.750001L20.25 20.25" stroke="black"></path>
-                                                </svg>
-                                            </button>
-
-                                        </div>
-
-                                        <p class="cart-item-article">
-                                            Артикул: VARDA-66678-rn-P
-                                        </p>
-                                    </div>
-                                    <div class="cart-item-info-bottom">
-                                        <div class="cart-item-price">
-                                            <div class="quantity-selector quantity-selector-card">
-                                                <button type="button" class="quantity-btn quantity-btn-cart-minus minus">
-                                                    <svg class="minus-icon" viewBox="0 0 17 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M17 0.5L8.5 0.5L0 0.499999" stroke="#CFA567"></path>
-                                                    </svg>
-                                                </button>
-
-                                                <div class="quantity-value">3</div>
-
-                                                <button class="quantity-btn quantity-btn-cart-plus plus">
-                                                    <svg class="plus-icon" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M17 8.5L8.5 8.5M-3.71547e-07 8.5L8.5 8.5M8.5 8.5L8.5 -3.71547e-07L8.5 17" stroke="#CFA567"></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-
-                                            <div class="cart-item-price-container">
-                                                <div class="cart-item-discount">
-                                                    <p class="cart-item-discount-price">
-                                                        114 900 ₽
-                                                    </p>
-
-                                                    <p class="cart-item-discount-banner">
-                                                        - 20%
-                                                    </p>
-                                                </div>
-
-                                                <p class="cart-item-price-value">
-                                                    114 900 ₽
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart-item" data-item-id="2">
-                                <div class="cart-image">
-                                    <div class="cart-image-wrapper">
-                                        <button class="choice-item-btn">
-                                            <label class="custom-checkbox">
-                                                <input class="item-checkbox" type="checkbox" name="all-choice" data-field="all-choice">
-                                                <span class="checkbox-box"></span>
-                                            </label>
-                                        </button>
-                                        <img src="img/4.png" alt>
-                                    </div>
-                                </div>
-                                <div class="cart-item-info">
-                                    <div class="cart-item-info-top">
-                                        <div class="cart-item-desc">
-                                            <a href="#" class="cart-item-name">Лампочка VARDA (Количество ламп 3)</a>
-
-                                            <button class="delete-cart-item-btn">
-                                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M20.25 0.75L10.5 10.5M0.749999 20.25L10.5 10.5M10.5 10.5L0.749999 0.750001L20.25 20.25" stroke="black"></path>
-                                                </svg>
-                                            </button>
-
-                                        </div>
-
-                                        <p class="cart-item-article">
-                                            Артикул: VARDA-66678-rn-P
-                                        </p>
-                                    </div>
-                                    <div class="cart-item-info-bottom">
-                                        <div class="cart-item-price">
-                                            <div class="quantity-selector quantity-selector-card">
-                                                <button type="button" class="quantity-btn quantity-btn-cart-minus minus">
-                                                    <svg class="minus-icon" viewBox="0 0 17 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M17 0.5L8.5 0.5L0 0.499999" stroke="#CFA567"></path>
-                                                    </svg>
-                                                </button>
-
-                                                <div class="quantity-value">1</div>
-
-                                                <button class="quantity-btn quantity-btn-cart-plus plus">
-                                                    <svg class="plus-icon" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M17 8.5L8.5 8.5M-3.71547e-07 8.5L8.5 8.5M8.5 8.5L8.5 -3.71547e-07L8.5 17" stroke="#CFA567"></path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <div class="cart-item-price-container">
-                                                <p class="cart-item-price-value">
-                                                    114 900 ₽
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="remove-banner-template">
-                                <div class="cart-item-remove-banner">
-                                    <div class="cart-item-remove-banner-left-side">
-                                        <p class="cart-item-remove-banner-text">
-                                            Товар <span>«Подвесная люстра VARDA (Количество ламп 3, цвет плафона жёлтый, цвет каркаса св.дерево, размер 8 × 5см)»</span> был
-                                            удалён из корзины
-                                        </p>
-
-                                        <button class="recover-item-btn">
-                                            Восстановить
-                                        </button>
-                                    </div>
-
-                                    <div class="cart-item-remove-banner-right-side">
-                                        <button class="hide-banner-item-btn">
-                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20.25 0.75L10.5 10.5M0.749999 20.25L10.5 10.5M10.5 10.5L0.749999 0.750001L20.25 20.25" stroke="black"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                                        </td>
+                                        <td class="sale-order-detail-order-item-properties" style="min-width: 250px;">
+                                            <a class="sale-order-detail-order-item-title" href="/catalog/lyustry/leeds-ring/">LEEDS RING (Кол-во ламп 8; размер Ø 80 × 26 см;
+                                                Черненая латунь)</a>
+                                        </td>
+                                        <td class="sale-order-detail-order-item-properties">
+                                            <strong class="bx-price">133&nbsp;100 ₽</strong>
+                                        </td>
+                                        <td class="sale-order-detail-order-item-properties">
+                                            <strong>1&nbsp;шт</strong>
+                                        </td>
+                                        <td class="sale-order-detail-order-item-properties text-right">
+                                            <strong class="bx-price">133&nbsp;100 ₽</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="promo-code-container">
-                            <div class="promo-code">
-                                <input type="text" placeholder="Промокод">
-
-                                <button class="promo-code-btn">
-                                    Применить
-                                </button>
-
-                                <button class="promo-code-clear" aria-label="Очистить">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20.25 0.75L10.5 10.5M0.749999 20.25L10.5 10.5M10.5 10.5L0.749999 0.750001L20.25 20.25" stroke="black"></path>
-                                    </svg>
-                                </button>
+                        <div class="order-p__total">
+                            <div class="orderDetailSumm">
+                                Итого: <span>133&nbsp;100 ₽</span>
+                                <p>Оплата при получении</p>
                             </div>
-
-                            <p class="promo-code-error">
-                                Промокод не найден
-                            </p>
-                        </div>
-                        <div class="cart-lines">
-                            <div class="price-line">
-                                <span class="label">Стоимость товаров</span>
-                                <span class="dots"></span>
-                                <span class="price-line-value">14 900 ₽</span>
-                            </div>
-
-                            <div class="discount-line">
-                                <span class="discount-label">Скидка</span>
-                                <span class="dots discount-dots"></span>
-                                <span class="discount-line-value">- 11 490 ₽</span>
-                            </div>
-                        </div>
-                        <div class="cart-total-price">
-                            <p>Итого:</p>
-
-                            <p class="cart-total-price-value">
-                                103 410 ₽
-                            </p>
                         </div>
                     </div>
-                    <div class="cart-right-side">
-                        <form class="cart-form">
-                            <div class="cart-form-head">
-                                <p class="cart-form-title">Контактная информация</p>
-                                <a href="#" class="cart-form-link">Войти</a>
-                            </div>
-                            <div class="cart-form-toggle">
-                                <input type="radio" name="person-type" id="jur" value="jur">
-                                <label for="jur">Юр.лицо</label>
+                    <div class="uk-width-1-4@m">
+                        <div class="userData">
+                            <p>тест тест</p>
+                            <p>kalyachkina.nadegda+1@yandex.ru</p>
+                            <a href="/?logout=yes" class="logout"><i data-uk-icon="sign-out" class="uk-icon"><svg width="10" height="8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"><path fill="#8C8C8C" stroke="#8C8C8C" stroke-width=".5" d="M.25.25h.5v7.5h-.5z"></path><path
+                                            d="M2.646 3.646a.5.5 0 000 .708l3.182 3.182a.5.5 0 10.708-.708L3.707 4l2.829-2.828a.5.5 0 10-.708-.708L2.646 3.646zM10 3.5H3v1h7v-1z"
+                                            fill="#8C8C8C"></path></svg></i><span>Выйти</span></a>
+                        </div>
 
-                                <input type="radio" name="person-type" id="phys" value="phys" checked>
-                                <label for="phys">Физ.лицо</label>
-                            </div>
-                            <input type="text" placeholder="Ваше имя *" class="cart-form-input">
-                            <input id="phone" type="tel" placeholder="Номер телефона *" class="cart-form-input">
-                            <span class="error-message-2 phone-error">
-                                Введите корректный номер телефона
-                            </span>
-                            <input type="text" placeholder="E-mail *" class="cart-form-input">
-                            <span class="error-message-2 email-error">
-                                Введите корректный email
-                            </span>
-                            <div class="cart-form-head delivery-methods">
-                                <p class="cart-form-title">Способ доставки</p>
-                            </div>
-                            <div class="cart-form-toggle">
-                                <input type="radio" name="delivery-method" id="self" value="self">
-                                <label for="self">Самовывоз</label>
-                                =
-                                <input type="radio" name="delivery-method" id="delivery" value="delivery" checked>
-                                <label for="delivery">Доставка</label>
-                            </div>
-                            <div class="delivery-methods-text">
-                                <div class="method-content delivery-content-self">
-                                    <p>Самовывоз доступен через 2–3 рабочих дня с момента оформления заказа.</p>
-                                    <ul>
-                                        <li>Адрес пункта: Москва, ул. Кржижановского д 23 стр 3 офис 5</li>
-                                        <li>Режим работы: Пн–Пт 10:00–18:00</li>
-                                        <li>Предварительная запись не требуется</li>
-                                    </ul>
-                                </div>
-                                <div class="method-content delivery-content-delivery active">
-                                    <p>
-                                        Срок поставки заказных светильников составляет 5-7 недель, в зависимости от сезона
-                                    </p>
-                                    <p>В пределах МКАД:</p>
-                                    <ul>
-                                        <li>от 30 000 рублей — БЕСПЛАТНО</li>
-                                        <li>до 30 000 рублей — 390 рублей</li>
-                                    </ul>
-                                    <p>За МКАД:</p>
-                                    <ul>
-                                        <li>30 рублей/1 км</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="delivery-address visible" style="max-height: none;">
-                                <div class="cart-form-head delivery-methods">
-                                    <p class="cart-form-title">Адрес доставки</p>
-                                </div>
-                                <input type="text" placeholder="Москва" class="cart-form-input">
-                                <input type="text" placeholder="Введите адрес * " class="cart-form-input">
-                                <textarea class="cart-form-input" rows="2"
-                                    placeholder="Комментарий по доставке. Например, как найти вход, пропускная система и т.д."></textarea>
-                            </div>
-                            <div class="cart-form-head delivery-methods">
-                                <p class="cart-form-title">Способ оплаты</p>
-                            </div>
-                            <div class="pay-types">
-                                <label class="custom-radio">
-                                    <input type="radio" name="payment-type" class="custom-radio__inp">
-                                    <span class="custom-radio__disc"></span>
-                                    <div class="ya-pay-example">
-                                        <img src="img/ya-pay-ex.svg" alt>
-                                    </div>
-                                </label>
-                                <label class="custom-radio">
-                                    <input type="radio" name="payment-type" class="custom-radio__inp">
-                                    <span class="custom-radio__disc"></span>
-                                    <span class="custom-radio__name">Оплата по счету</span>
-                                </label>
-                            </div>
-                            <div class="accept-politics">
-                                <label class="custom-checkbox">
-                                    <input type="checkbox" name="accept" data-field="accept">
-                                    <span class="checkbox-box"></span>
-                                </label>
-                                <p>Я соглашаюсь <span><a href="#">c политикой обработки персональных данных</a></span></p>
-                            </div>
-                            <button class="place-order-btn" type="submit">
-                                Оформить заказ
-                            </button>
-                        </form>
+                        <ul class="leftMenu">
+
+                            <li><a href="/personal/private/">Личные данные</a></li>
+
+                            <li><a href="/personal/orders/" class="selected">Заказы</a></li>
+
+                            <li><a href="/favorite/">Избранное</a></li>
+
+                        </ul>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
 
         <footer class="footer">
@@ -1731,7 +1567,7 @@
         <script src="local/components/dev/form/templates/oneclick/script.js?17613004293769"></script>
         <script src="local/templates/pulssar/components/slam/easyform/imgForm/bitrix/main.file.input/drag_n_drop/script.min.js?174956809617032"></script>
         <script src="local/templates/pulssar/components/bitrix/catalog/catalogNew/bitrix/catalog.element/.default/script.js?17641452693765"></script>
-        <!-- <script src="local/templates/pulssar/js/validation.js"></script> -->
+    <!--     <script src="local/templates/pulssar/js/validation.js"></script> -->
         <script type="text/javascript">
             (function(m,e,t,r,i,k,a){
                 m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

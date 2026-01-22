@@ -76,7 +76,37 @@
 </script>
 
     </head>
-    <body class="design2024 innerPages innerPages--cart">
+    <body class="design2024 innerPages">
+        <div class="uk-container">
+            <div class="bx-breadcrumb" itemprop="http://schema.org/breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+
+                    <a href="/" title="Главная" itemprop="item">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </div>
+                <div class="bx-breadcrumb-item" id="bx_breadcrumb_1" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <i data-uk-icon="icon: chevron-right; ratio: 0.6"></i>
+                    <a href="/catalog/" title="Каталог" itemprop="item">
+                        <span itemprop="name">Каталог</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </div>
+                <div class="bx-breadcrumb-item" id="bx_breadcrumb_2" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <i data-uk-icon="icon: chevron-right; ratio: 0.6"></i>
+                    <a href="/catalog/torshery/" title="Торшеры" itemprop="item">
+                        <span itemprop="name">Торшеры</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </div>
+                <div class="bx-breadcrumb-item">
+                    <i data-uk-icon="icon: chevron-right; ratio: 0.6"></i>
+                    <span>Торшер DOME FL</span>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
 
         <main class="main">
             <div class="uk-container mb-100 order-p">
@@ -85,7 +115,7 @@
                 <div data-uk-grid class="uk-grid">
                     <div class="uk-width-expand uk-first-column">
                         <h2>Информация о заказе</h2>
-                        <div class="order-tables">
+                        <div class="order-p__tables">
                             <table>
                                 <tbody>
                                     <tr>
@@ -157,7 +187,7 @@
                             </table>
                         </div>
                         <div class="order-p__total">
-                            <div id="yapay_button_container">
+                            <div class="order-p__total-yapay" id="yapay_button_container">
                                 <button id="yandexpay-button-1" type="button" aria-label="Yandex Pay"
                                     class="ya-pay-button ya-pay-button_type_pay ya-pay-button_theme_black ya-pay-button_width_auto ya-pay-button_theme-type_dark"
                                     style="overflow: hidden !important; flex: 1 0 auto !important; box-sizing: border-box !important; cursor: pointer !important; user-select: none !important; border-width: 1px !important; border-style: solid !important; background-position: center center !important; background-size: contain, cover !important; background-repeat: no-repeat !important; background-clip: border-box !important; background-origin: content-box, border-box !important; transition: opacity 150ms linear, filter 150ms linear, background-color 150ms linear !important; transform: translate3d(0px, 0px, 0px) !important; background-color: rgb(23, 0, 35) !important; padding: 14px 36px;">
@@ -1529,6 +1559,7 @@
 
         <script src="local/templates/pulssar/js/uikit.min.js?1757431663135663"></script>
         <script src="local/templates/pulssar/js/swiper-bundle.min.js?1749568096151701"></script>
+        <script src="bitrix/components/slam/easyform/lib/js/inputmask.js?1629895785177292"></script>
         <script src="local/templates/pulssar/js/scriptNew.min.js?176414526956136"></script>
         <script src="local/templates/pulssar/js/custom.min.js?1761302286926"></script>
         <script src="local/templates/pulssar/js/uikit-icons.js?174956809684584"></script>
@@ -1539,12 +1570,11 @@
         <script src="local/templates/pulssar/components/bitrix/sale.basket.basket.line/basketSmall/script.min.js?17495680963876"></script>
         <script src="bitrix/components/slam/easyform/lib/js/bootstrap.min.js?16298957857670"></script>
         <script src="bitrix/components/slam/easyform/lib/js/bootstrapValidator.min.js?1629895785103245"></script>
-        <script src="bitrix/components/slam/easyform/lib/js/inputmask.js?1629895785177292"></script>
         <script src="bitrix/components/slam/easyform/script.js?162989578515074"></script>
         <script src="local/components/dev/form/templates/oneclick/script.js?17613004293769"></script>
         <script src="local/templates/pulssar/components/slam/easyform/imgForm/bitrix/main.file.input/drag_n_drop/script.min.js?174956809617032"></script>
         <script src="local/templates/pulssar/components/bitrix/catalog/catalogNew/bitrix/catalog.element/.default/script.js?17641452693765"></script>
-        <script src="local/templates/pulssar/js/validation.js"></script>
+        <!-- <script src="local/templates/pulssar/js/validation.js"></script> -->
         <script type="text/javascript">
             (function(m,e,t,r,i,k,a){
                 m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
