@@ -3451,13 +3451,15 @@ function getRequiredInputs(form) {
 }
 //enable/disable submit btn
 function toggleSubmitBtn(form) {
-    const requiredInputs = getRequiredInputs(form)
-    const submitBtn = form.querySelector('button[type=submit]');
-    if (requiredInputs.length && submitBtn) {
-        let hasInvalid = [...requiredInputs].some(inp => !isInputValid(inp));
-        submitBtn.disabled = hasInvalid;
-        submitBtn.style.opacity = hasInvalid ? 0.5 : 1;
-        submitBtn.style.pointerEvents = hasInvalid ? 'none' : 'auto';
+    if (!form.classList.contains("cart-form")) {
+        const requiredInputs = getRequiredInputs(form)
+        const submitBtn = form.querySelector('button[type=submit]');
+        if (requiredInputs.length && submitBtn) {
+            let hasInvalid = [...requiredInputs].some(inp => !isInputValid(inp));
+            submitBtn.disabled = hasInvalid;
+            submitBtn.style.opacity = hasInvalid ? 0.5 : 1;
+            submitBtn.style.pointerEvents = hasInvalid ? 'none' : 'auto';
+        }
     }
 }
 const disabledForm = document.querySelectorAll(".disabled-form")

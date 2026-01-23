@@ -44,6 +44,22 @@
     font-weight: 600;
     color: black;
 }
+.no-smooth-scroll {
+    scroll-behavior: auto;
+}
+[data-error] {
+    margin-bottom: 10px;
+    color: #ff6b6b;
+    font-size: 14px;
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+input+[data-error] {
+    padding-left: 10px;
+}
 .switch-block [data-tab] {
     cursor: pointer;
 }
