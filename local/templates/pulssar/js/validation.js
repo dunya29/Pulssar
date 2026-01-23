@@ -10,7 +10,7 @@ function isInputValid(inp) {
     if (inp.type === 'checkbox' || inp.type === 'radio') {
         return inp.checked;
     }
-    if (!inp.value) return false;
+    if (!inp.value.trim()) return false;
     if (inp.type === 'email') {
         return isEmail(inp.value);
     }
@@ -30,8 +30,7 @@ function formRemoveError(inp) {
 //enable/disable submit btn
 const disabledForm = document.querySelectorAll(".disabled-form")
 function toggleSubmitBtn(form) {
-    const submitBtn = form.querySelector('button[type=submit]');
-    const requiredInputs = form.querySelectorAll('input[required]');
+    const submitBtn = form.querySelectorAll('input[required]');
     const hasInvalid = [...requiredInputs].some(inp => !isInputValid(inp));
     submitBtn.disabled = hasInvalid;
     submitBtn.style.opacity = hasInvalid ? 0.5 : 1;

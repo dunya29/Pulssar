@@ -8,6 +8,7 @@
         <link href="bitrix/js/main/popup/dist/main.popup.bundle.min.css?175678694028056" type="text/css" rel="stylesheet">
         <link href="bitrix/cache/css/s1/pulssar/template_dafb7165b1cb0d8144ff47df00ceb2ce/template_dafb7165b1cb0d8144ff47df00ceb2ce_v1.css?1763981440620635"
             type="text/css" data-template-style="true" rel="stylesheet">
+            <link rel="stylesheet" href="local/templates/pulssar/css/validation.css">
         <link rel="stylesheet" href="local/templates/pulssar/css/cart.css">
 
         <!-- Yandex.Metrika counter -->
@@ -85,7 +86,7 @@
                         <div class="cart-left-side-head">
                             <button type="button" class="cart-choice-all-button">
                                 <label class="custom-checkbox">
-                                    <input id="select-all" type="checkbox" name="all-choice" data-field="all-choice">
+                                    <input checked id="select-all" type="checkbox" name="all-choice" data-field="all-choice">
                                     <span class="checkbox-box"></span>
                                     Выбрать все
                                 </label>
@@ -101,7 +102,7 @@
                                     <div class="cart-image-wrapper">
                                         <button class="choice-item-btn">
                                             <label class="custom-checkbox">
-                                                <input class="item-checkbox" type="checkbox" name="all-choice" data-field="all-choice">
+                                                <input checked class="item-checkbox" type="checkbox" name="all-choice" data-field="all-choice">
                                                 <span class="checkbox-box"></span>
                                             </label>
                                         </button>
@@ -170,7 +171,7 @@
                                     <div class="cart-image-wrapper">
                                         <button class="choice-item-btn">
                                             <label class="custom-checkbox">
-                                                <input class="item-checkbox" type="checkbox" name="all-choice" data-field="all-choice">
+                                                <input checked class="item-checkbox" type="checkbox" name="all-choice" data-field="all-choice">
                                                 <span class="checkbox-box"></span>
                                             </label>
                                         </button>
@@ -284,76 +285,105 @@
                         </div>
                     </div>
                     <div class="cart-right-side">
-                        <form class="cart-form">
+                        <form class="disabled-form cart-form" novalidate>
                             <div class="cart-form-head">
                                 <p class="cart-form-title">Контактная информация</p>
                                 <a href="#" class="cart-form-link">Войти</a>
                             </div>
-                            <div class="cart-form-toggle">
-                                <input type="radio" name="person-type" id="jur" value="jur">
-                                <label for="jur">Юр.лицо</label>
-
-                                <input type="radio" name="person-type" id="phys" value="phys" checked>
-                                <label for="phys">Физ.лицо</label>
+                            <div class="switch-block cart-form__toggle">
+                                <div class="switch-block__tabs">
+                                    <div class="active" data-tab="1">Юр.лицо</div>
+                                    <div data-tab="2">Физ.лицо</div>
+                                </div>
+                                <div class="switch-block__blocks">
+                                    <div class="active" data-block="1">
+                                        <div class="form-group">
+                                            <input required type="text" placeholder="Ваше имя *" class="cart-form-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <input required type="tel" placeholder="Номер телефона *" class="cart-form-input">
+                                            <span class="error-message-2" data-error>
+                                                Введите корректный номер телефона
+                                            </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input required type="email" placeholder="E-mail *" class="cart-form-input">
+                                            <span class="error-message-2" data-error>
+                                                Введите корректный email
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div data-block="2">
+                                        <div class="form-group">
+                                            <input required type="text" placeholder="Ваше имя *" class="cart-form-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <input required type="tel" placeholder="Номер телефона *" class="cart-form-input">
+                                            <span class="error-message-2" data-error>
+                                                Введите корректный номер телефона
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <input type="text" placeholder="Ваше имя *" class="cart-form-input">
-                            <input id="phone" type="tel" placeholder="Номер телефона *" class="cart-form-input">
-                            <span class="error-message-2 phone-error">
-                                Введите корректный номер телефона
-                            </span>
-                            <input type="text" placeholder="E-mail *" class="cart-form-input">
-                            <span class="error-message-2 email-error">
-                                Введите корректный email
-                            </span>
-                            <div class="cart-form-head delivery-methods">
+                            <div class="cart-form-head">
                                 <p class="cart-form-title">Способ доставки</p>
                             </div>
-                            <div class="cart-form-toggle">
-                                <input type="radio" name="delivery-method" id="self" value="self">
-                                <label for="self">Самовывоз</label>
-                                =
-                                <input type="radio" name="delivery-method" id="delivery" value="delivery" checked>
-                                <label for="delivery">Доставка</label>
-                            </div>
-                            <div class="delivery-methods-text">
-                                <div class="method-content delivery-content-self">
-                                    <p>Самовывоз доступен через 2–3 рабочих дня с момента оформления заказа.</p>
-                                    <ul>
-                                        <li>Адрес пункта: Москва, ул. Кржижановского д 23 стр 3 офис 5</li>
-                                        <li>Режим работы: Пн–Пт 10:00–18:00</li>
-                                        <li>Предварительная запись не требуется</li>
-                                    </ul>
+                            <div class="switch-block cart-form__toggle">
+                                <div class="switch-block__tabs">
+                                    <div data-tab="1">Самовывоз</div>
+                                    <div class="active" data-tab="2">Доставка</div>
                                 </div>
-                                <div class="method-content delivery-content-delivery active">
-                                    <p>
-                                        Срок поставки заказных светильников составляет 5-7 недель, в зависимости от сезона
-                                    </p>
-                                    <p>В пределах МКАД:</p>
-                                    <ul>
-                                        <li>от 30 000 рублей — БЕСПЛАТНО</li>
-                                        <li>до 30 000 рублей — 390 рублей</li>
-                                    </ul>
-                                    <p>За МКАД:</p>
-                                    <ul>
-                                        <li>30 рублей/1 км</li>
-                                    </ul>
+                                <div class="switch-block__blocks">
+                                    <div data-block="1">
+                                        <div class="cart-form__text">
+                                            <p>Самовывоз доступен через 2–3 рабочих дня с момента оформления заказа.</p>
+                                            <ul>
+                                                <li>Адрес пункта: Москва, ул. Кржижановского д 23 стр 3 офис 5</li>
+                                                <li>Режим работы: Пн–Пт 10:00–18:00</li>
+                                                <li>Предварительная запись не требуется</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="active" data-block="2">
+                                        <div class="cart-form__text">
+                                            <p>
+                                                Срок поставки заказных светильников составляет 5-7 недель, в зависимости от сезона
+                                            </p>
+                                            <p>В пределах МКАД:</p>
+                                            <ul>
+                                                <li>от 30 000 рублей — БЕСПЛАТНО</li>
+                                                <li>до 30 000 рублей — 390 рублей</li>
+                                            </ul>
+                                            <p>За МКАД:</p>
+                                            <ul>
+                                                <li>30 рублей/1 км</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cart-form__address">
+                                            <div class="cart-form-head delivery-methods">
+                                                <p class="cart-form-title">Адрес доставки</p>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Москва" class="cart-form-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <input required type="text" placeholder="Введите адрес * " class="cart-form-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="cart-form-input" rows="2"
+                                                placeholder="Комментарий по доставке. Например, как найти вход, пропускная система и т.д."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="delivery-address visible" style="max-height: none;">
-                                <div class="cart-form-head delivery-methods">
-                                    <p class="cart-form-title">Адрес доставки</p>
-                                </div>
-                                <input type="text" placeholder="Москва" class="cart-form-input">
-                                <input type="text" placeholder="Введите адрес * " class="cart-form-input">
-                                <textarea class="cart-form-input" rows="2"
-                                    placeholder="Комментарий по доставке. Например, как найти вход, пропускная система и т.д."></textarea>
-                            </div>
-                            <div class="cart-form-head delivery-methods">
+                            <div class="cart-form-head">
                                 <p class="cart-form-title">Способ оплаты</p>
                             </div>
                             <div class="pay-types">
                                 <label class="custom-radio">
-                                    <input type="radio" name="payment-type" class="custom-radio__inp">
+                                    <input checked type="radio" name="payment-type" class="custom-radio__inp">
                                     <span class="custom-radio__disc"></span>
                                     <div class="ya-pay-example">
                                         <img src="img/ya-pay-ex.svg" alt>
@@ -367,10 +397,10 @@
                             </div>
                             <div class="accept-politics">
                                 <label class="custom-checkbox">
-                                    <input type="checkbox" name="accept" data-field="accept">
+                                    <input required type="checkbox" class="required">
                                     <span class="checkbox-box"></span>
                                 </label>
-                                <p>Я соглашаюсь <span><a href="#">c политикой обработки персональных данных</a></span></p>
+                                <p>Я соглашаюсь <span><a href="#" target="_blank">c политикой обработки персональных данных</a></span></p>
                             </div>
                             <button class="place-order-btn" type="submit">
                                 Оформить заказ
@@ -1716,7 +1746,8 @@
 
         <script src="local/templates/pulssar/js/uikit.min.js?1757431663135663"></script>
         <script src="local/templates/pulssar/js/swiper-bundle.min.js?1749568096151701"></script>
-        <script src="local/templates/pulssar/js/scriptNew.min.js?176414526956136"></script>
+        <script src="bitrix/components/slam/easyform/lib/js/inputmask.js?1629895785177292"></script>
+        <script src="local/templates/pulssar/js/scriptNew.js"></script>
         <script src="local/templates/pulssar/js/custom.min.js?1761302286926"></script>
         <script src="local/templates/pulssar/js/uikit-icons.js?174956809684584"></script>
         <script src="local/templates/pulssar/js/script.min.js?17574316635495"></script>
@@ -1726,12 +1757,11 @@
         <script src="local/templates/pulssar/components/bitrix/sale.basket.basket.line/basketSmall/script.min.js?17495680963876"></script>
         <script src="bitrix/components/slam/easyform/lib/js/bootstrap.min.js?16298957857670"></script>
         <script src="bitrix/components/slam/easyform/lib/js/bootstrapValidator.min.js?1629895785103245"></script>
-        <script src="bitrix/components/slam/easyform/lib/js/inputmask.js?1629895785177292"></script>
         <script src="bitrix/components/slam/easyform/script.js?162989578515074"></script>
         <script src="local/components/dev/form/templates/oneclick/script.js?17613004293769"></script>
         <script src="local/templates/pulssar/components/slam/easyform/imgForm/bitrix/main.file.input/drag_n_drop/script.min.js?174956809617032"></script>
         <script src="local/templates/pulssar/components/bitrix/catalog/catalogNew/bitrix/catalog.element/.default/script.js?17641452693765"></script>
-        <!-- <script src="local/templates/pulssar/js/validation.js"></script> -->
+         <script src="local/templates/pulssar/js/cart.js"></script>
         <script type="text/javascript">
             (function(m,e,t,r,i,k,a){
                 m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

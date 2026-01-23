@@ -3,7 +3,10 @@
 // Прелоадер
 
 window.addEventListener("load", function () {
-    document.getElementById("preloader").style.display = "none";
+    if (document.getElementById("preloader")) {
+        document.getElementById("preloader").style.display = "none";
+    }
+
 });
 
 // Тестовая шапка
@@ -2182,11 +2185,10 @@ if (promo) {
 
         btnApply.classList.remove('visible');
         btnClear.classList.add('visible');
+        input.setAttribute("readonly", true)
+        promoValid = checkPromoCode(code);
 
-        const isValid = checkPromoCode(code);
-        promoValid = isValid;
-
-        if (!isValid) {
+        if (!promoValid) {
             showError("Промокод не найден");
         } else {
             hideError();
@@ -2195,6 +2197,7 @@ if (promo) {
     });
 
     btnClear.addEventListener('click', () => {
+        input.removeAttribute("readonly")
         input.value = '';
         btnClear.classList.remove('visible');
         btnApply.classList.remove('visible');
@@ -2220,27 +2223,39 @@ if (promo) {
 }
 
 // Выбрать всё
-
+//enable / disable cart submit btn
+function cartSubmitBtn(submitBtn,checkItems) {
+    if (submitBtn && checkItems.length) {
+        if (!Array.from(checkItems).some(inp => inp.checked)) {
+            submitBtn.classList.add("disabled")
+        } else {
+            submitBtn.classList.remove("disabled")
+        }
+    }
+}
 const btnSelectAll = document.querySelector('.cart-choice-all-button');
 
 if (btnSelectAll) {
     const selectAll = document.getElementById('select-all');
-    const items = document.querySelectorAll('.item-checkbox');
+    const items = document.querySelectorAll('.cart-item .item-checkbox');
+    const submitBtn = document.querySelector(".cart-form button[type=submit]")
     selectAll.addEventListener('change', () => {
         items.forEach(cb => cb.checked = selectAll.checked);
+        cartSubmitBtn(submitBtn, items)
     });
 
     items.forEach(cb => {
         cb.addEventListener('change', () => {
             const allChecked = Array.from(items).every(i => i.checked);
             selectAll.checked = allChecked;
+            cartSubmitBtn(submitBtn, items)
         });
     });
 }
 
 // Описание способа доставки
 
-const deliveryMethodsText = document.querySelector('.delivery-methods-text');
+/* const deliveryMethodsText = document.querySelector('.delivery-methods-text');
 
 if (deliveryMethodsText) {
     const radios = document.querySelectorAll('input[name="delivery-method"]');
@@ -2440,7 +2455,7 @@ function clearOrderForm() {
     }
 }
 
-validateOrderForm();
+validateOrderForm(); */
 
 // Переход при нажатии на рейтинг товара к якорной ссылке отзывов
 
@@ -3426,17 +3441,27 @@ function formAddError(inp) {
 function formRemoveError(inp) {
     inp.closest('.form-group')?.classList.remove('error');
 }
+function getRequiredInputs(form) {
+    return Array.from(
+        form.querySelectorAll('input[required]')
+    ).filter(input => {
+        const block = input.closest('[data-block]');
+        return !block || block.classList.contains('active');
+    });
+}
 //enable/disable submit btn
 function toggleSubmitBtn(form) {
+    const requiredInputs = getRequiredInputs(form)
     const submitBtn = form.querySelector('button[type=submit]');
-    const requiredInputs = form.querySelectorAll('input[required]');
-    const hasInvalid = [...requiredInputs].some(inp => !isInputValid(inp));
-    submitBtn.disabled = hasInvalid;
-    submitBtn.style.opacity = hasInvalid ? 0.5 : 1;
-    submitBtn.style.pointerEvents = hasInvalid ? 'none' : 'auto';
+    if (requiredInputs.length && submitBtn) {
+        let hasInvalid = [...requiredInputs].some(inp => !isInputValid(inp));
+        submitBtn.disabled = hasInvalid;
+        submitBtn.style.opacity = hasInvalid ? 0.5 : 1;
+        submitBtn.style.pointerEvents = hasInvalid ? 'none' : 'auto';
+    }
 }
 const disabledForm = document.querySelectorAll(".disabled-form")
-if (disabledForm.length > 0) {
+if (disabledForm.length) {
     disabledForm.forEach(form => {
         //mask input
         const inpTel = form.querySelectorAll('input[type=tel]')
@@ -3447,6 +3472,7 @@ if (disabledForm.length > 0) {
                         mask: "+7 999 999-99-99",
                         oncomplete: function () {
                             formRemoveError(item)
+                            toggleSubmitBtn(form)
                         },
                     }
                 ).mask(item);
@@ -3478,14 +3504,20 @@ if (disabledForm.length > 0) {
             form.addEventListener('submit', e => {
                 e.preventDefault();
                 let errors = 0;
-                requiredInputs.forEach(inp => {
-                    if (!isInputValid(inp)) {
-                        errors++;
-                        formAddError(inp);
-                    }
-                });
+                const inpRequired = getRequiredInputs(form)
+                if (inpRequired.length) {
+                    inpRequired.forEach(inp => {
+                        if (!isInputValid(inp)) {
+                            errors++;
+                            formAddError(inp);
+                        }
+                    });
+                }
                 if (errors === 0) {
                     form.submit();
+                } else {
+                    let firstErrorEl = form.querySelector('.form-group.error')
+                    smoothScrollTo(firstErrorEl)
                 }
             });
         }

@@ -44,15 +44,87 @@
     font-weight: 600;
     color: black;
 }
-.delivery-methods-text p:not(:last-child) {
+.switch-block [data-tab] {
+    cursor: pointer;
+}
+.switch-block [data-tab].active {
+    pointer-events: none;
+}
+.switch-block [data-block] {
+    display: none;
+    transition: all 0.4s linear;
+}
+.switch-block [data-block].active {
+    display: block;
+}
+.cart-form .switch-block__tabs {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cart-form [data-tab] {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    background: #fff;
+    transition: background .2s, color .2s;
+    border-radius: 8px;
+}
+.cart-form [data-tab]:first-of-type {
+    border-right: none;
+}
+.cart-form [data-tab].active {
+    background: #cfa567;
+    color: #fff;
+    border-radius: 8px;
+}
+.cart-form-head {
+    margin-top: 40px;
+}
+.cart-form-head:first-child {
+    margin-top: 40px;
+}
+.cart-form__text {
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 18px 20px;
+    background-color: #fff;
+}
+.cart-form__text p:not(:last-child) {
     margin-bottom: 12px
 }
-.delivery-methods-text ul {
+.cart-form__text ul {
+    font-weight: 600;
     margin-top: 0;
     margin-bottom: 12px
 }
-.delivery-methods-text ul:last-child {
+.cart-form__text ul:last-child {
     margin-bottom: 0
+}
+.cart-form .form-group.error input::placeholder {
+    color: #ff6b6b;
+}
+.cart-form .form-group.error input:placeholder-shown+[data-error] {
+    display: none;
+}
+.cart-form button {
+    transition: all .3s linear;
+}
+.cart-form button.disabled {
+    opacity: 0.5 !important;
+    pointer-events: none !important;
+}
+.promo-code input:read-only {
+    cursor: default;
 }
 @media (min-width: 1100.98px) {
     .cart {
@@ -70,6 +142,12 @@
 }
 @media (max-width: 1500px) {
     .custom-radio__name {
+        font-size: 14px;
+    }
+    .cart-form [data-tab] {
+        font-size: 16px;
+    }
+    .cart-form__text {
         font-size: 14px;
     }
 }

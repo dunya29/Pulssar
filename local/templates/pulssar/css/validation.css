@@ -34,7 +34,9 @@
 
 }
 
-.form-group.error .tooltip{
-    opacity: 1;
+.form-group.error .tooltip,
+.form-group.error [data-error]{
     display: block;
+    max-height: none;
+    opacity: 1;
 }
