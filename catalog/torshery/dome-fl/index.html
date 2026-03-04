@@ -9,6 +9,7 @@
         <link href="../../../bitrix/cache/css/s1/pulssar/template_dafb7165b1cb0d8144ff47df00ceb2ce/template_dafb7165b1cb0d8144ff47df00ceb2ce_v1.css?1763981440620635"
             type="text/css" data-template-style="true" rel="stylesheet">
         <link rel="stylesheet" href="../../../local/templates/pulssar/css/validation.css">
+        <link rel="stylesheet" href="../../../local/templates/pulssar/css/style.css">
 
         <!-- Yandex.Metrika counter -->
 
@@ -77,16 +78,16 @@
     <body class="design2024 innerPages">
 
         <!---->
-        <header class="header headerSticky" uk-sticky data-nosnippet>
+        <header class="header headerSticky uk-sticky uk-sticky-fixed" uk-sticky data-nosnippet
+            style="position: fixed; top: 0px; width: 1920px; transition: transform 420ms cubic-bezier(0.2, 0.9, 0.2, 1), opacity 320ms cubic-bezier(0.2, 0.9, 0.2, 1);">
             <div class="uk-container  header__container">
-                <div class="uk-flex-middle  header__grid" data-uk-grid>
-                    <div class="uk-width-1-6@m uk-width-1-3@s uk-width-1-2 logo_wrapp_sticky  header__logo">
-                        <a href="/" class="logoLink" uk-toggle="target: .logoImg; mode: hover; media: (min-width: 640px)">
-                            <img src="#" data-src="/local/templates/pulssar/img/logo.svg" class="logoImg" data-uk-img alt width="260">
-                            <img src="#" data-src="/local/templates/pulssar/img/logoHover.svg" class="logoImg" data-uk-img alt width="260" hidden>
-
-                            <!--<img src="#" data-src="/upload/dev2fun.imagecompress/webp/local/templates/pulssar/img/logo_ng.webp" class="logoImg" data-uk-img alt="" width="260">
-                    <img src="#" data-src="/upload/dev2fun.imagecompress/webp/local/templates/pulssar/img/logo_ng.webp" class="logoImg" data-uk-img alt="" width="260" hidden>-->
+                <div class="uk-flex-middle header__grid uk-grid" data-uk-grid>
+                    <div class="uk-width-1-6@m uk-width-1-3@s uk-width-1-2 logo_wrapp_sticky header__logo uk-first-column">
+                        <a href="/" class="logoLink header-logo" aria-expanded="true">
+                            <picture>
+                                <source srcset="../../../local/templates/pulssar/img/header-logo-mob.svg" media="(max-width: 960.98px)">
+                                <img src="../../../local/templates/pulssar/img/header-logo.svg" alt="Pulssar" class="logoImg">
+                            </picture>
                         </a>
                         <a href="/" class="logoFixed">
                             <img src="#" data-src="/local/templates/pulssar/img/logoFixed.svg" data-uk-img alt width="237">
@@ -96,11 +97,11 @@
                     <div class="header__info">
                         <div class="uk-flex uk-visible@s  header__menu">
 
-                            <nav class="uk-navbar-container topLineMenu uk-navbar-transparent topLineMenu" data-uk-navbar="mode: hover;delay-hide:0">
+                            <nav class="uk-navbar-container topLineMenu uk-navbar-transparent uk-navbar" data-uk-navbar="mode: hover;delay-hide:0">
                                 <ul class="uk-navbar-nav">
 
                                     <li class="  ">
-                                        <a href="/o-kompanii/" class="root-item">О компании <span class="ml-5 dropdown-trigger">
+                                        <a href="/o-kompanii/" class="root-item" aria-expanded="false">О компании <span class="ml-5 dropdown-trigger">
                                                 <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path
                                                             d="M1.523 3.998L5.63 8.104l4.106-4.106" stroke="#fff"></path></g><defs><clippath id="clip0"><path fill="#fff"
                                                                 transform="translate(.129 .5)" d="M0 0h11v11H0z"></path></clippath></defs></svg>
@@ -123,78 +124,79 @@
 
                                     <li class="  "><a href="/dostavka/">Доставка</a></li>
 
-                                    <li class="  hidemesm "><a href="/news/">Новости</a></li>
-
                                     <li class="  "><a href="/partnerstvo/">Партнерство</a></li>
 
                                     <li class="  "><a href="/kontakty/">Контакты</a></li>
-
-                                    <li class="  hidemesm "><a href="/stati/">Статьи</a></li>
 
                                 </ul>
                             </nav>
                             <style> @media (max-width:1690px) { .hidemesm{display:none;}}</style> </div>
 
-                        <div class="header__action">
+                        <div class="header__action" data-_hidden="0">
                             <div class="header__contact">
                                 <a href="mailto:office@pulssar.ru" class="headerEmail  header__contact-item">office@pulssar.ru</a>
-                                <div class="header__contact-item">
-                                    <a class="topLineTel " href="tel:+7 495 021 21 19">
+                                <div class="header__contact-item" tabindex="0" aria-expanded="false">
+                                    <a class="topLineTel ">
                                         <span>+7 495 021 21 19</span>
                                     </a>
-                                    <a class="topLineTel" href="tel:+7 495 021 21 19">
+                                    <a class="topLineTel">
                                         <span>+7 926 733 73 36</span>
                                     </a>
                                 </div>
-                                <div class="hoverDropdown uk-text-center hoverDropdown-hide" data-uk-dropdown="pos: bottom-right">
+                                <div class="hoverDropdown uk-text-center hoverDropdown-hide uk-dropdown" data-uk-dropdown="pos: bottom-right">
                                     <a class="btn headerBtnZvonok brownBtn w-100 mb-10" href="tel:+79267337336" target="_blank"
                                         style=" align-items: center; gap: 10px;">Позвонить</a>
-                                    <button class="btn brownBtn w-100 mb-10" data-uk-toggle="target: #callMeModal">Заказать звонок</button>
-                                    <a class="btn brownBtn w-100 mb-30" href="https://wa.me/79267337336" target="_blank"
-                                        style="display: flex; align-items: center; gap: 10px;">Связаться в WhatsApp</a>
+                                    <button class="btn brownBtn w-100 mb-10" data-uk-toggle="target: #callMeModal" aria-expanded="false">Заказать звонок</button>
+                                    <a class="btn brownBtn w-100 mb-30" href="https://t.me/PULSSAR_chat" target="_blank"
+                                        style="display: flex; align-items: center; gap: 10px;">Связаться в Telegram</a>
                                     <div class="mb-10">Мы в социальных сетях</div>
                                     <div class="headerSocial">
-                                        <a href="https://vk.com/pulssar_ru" data-uk-icon="vkontakte" target="_blank" class="uk-preserve">
-                                            <svg width="22" height="22" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="vk">
+                                        <a href="https://vk.com/pulssar_ru" data-uk-icon="vkontakte" target="_blank" class="uk-preserve uk-icon">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-svg="vk">
                                                 <path
                                                     d="M21.54736,7H18.25688a.74281.74281,0,0,0-.65452.39156s-1.31237,2.41693-1.73392,3.231C14.73438,12.8125,14,12.125,14,11.10863V7.60417A1.10417,1.10417,0,0,0,12.89583,6.5h-2.474a1.9818,1.9818,0,0,0-1.751.8125s1.25626-.20312,1.25626,1.48958c0,.41974.02162,1.62723.04132,2.64a.72943.72943,0,0,1-1.273.50431,21.54029,21.54029,0,0,1-2.4982-4.54359A.69314.69314,0,0,0,5.5668,7C4.8532,7,3.42522,7,2.57719,7a.508.508,0,0,0-.47969.68481C3.00529,10.17487,6.91576,18,11.37917,18h1.87865A.74219.74219,0,0,0,14,17.25781V16.12342a.7293.7293,0,0,1,1.22868-.5315l2.24861,2.1127A1.08911,1.08911,0,0,0,18.223,18h2.95281c1.42415,0,1.42415-.98824.64768-1.75294-.54645-.53817-2.51832-2.61663-2.51832-2.61663A1.01862,1.01862,0,0,1,19.2268,12.307c.63737-.83876,1.67988-2.21175,2.122-2.79993C21.95313,8.70313,23.04688,7,21.54736,7Z"></path>
                                             </svg>
                                         </a>
-                                        <a href="https://t.me/pulssar_ru" data-uk-icon="telegram" target="_blank" class="uk-preserve"></a>
+                                        <a href="https://t.me/pulssar_light" data-uk-icon="telegram" target="_blank" class="uk-preserve uk-icon"><svg width="20" height="17"
+                                                xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M7.522 15.759c.46 0 .663-.21.92-.46l2.21-2.148 4.595 3.395c.846.467 1.456.225 1.667-.785L19.93 1.544C20.24.305 19.459-.256 18.65.11L.934 6.942c-1.21.485-1.202 1.16-.22 1.46l4.546 1.42 10.525-6.64c.497-.302.953-.14.578.192L7.835 11.07l-.313 4.689z"></path></svg></a>
                                     </div>
                                 </div>
                             </div>
 
-                            <button class="btn-reset header__search">
+                            <button class="btn-reset header__search" aria-expanded="false">
                                 <svg class="icon">
-                                    <use href="../../../local/templates/pulssar/img/header-search.svg#header-search"></use>
+                                    <use href="/local/templates/pulssar/img/header-search.svg#header-search"></use>
                                 </svg>
                             </button>
-                            <div id="headerSearchWrap" uk-dropdown="pos: bottom-justify; boundary: .menuAlign; boundary-align: true; mode: click">
+                            <div id="headerSearchWrap" uk-dropdown="pos: bottom-justify; boundary: .menuAlign; boundary-align: true; mode: click" class="uk-dropdown">
                                 <div id="title-search" class="bx-searchtitle">
                                     <form action="/search/index.php" class="uk-search uk-search-default">
-                                        <button class="uk-search-icon-flip" type="submit" name="s" uk-search-icon></button>
+                                        <button class="uk-search-icon-flip uk-icon uk-search-icon" type="submit" name="s" uk-search-icon><svg width="20" height="20"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9"
+                                                    r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></button>
                                         <input id="title-search-input" class="uk-search-input" type="search" placeholder="Введите название товара или артикул" name="q"
                                             autocomplete="off" value>
                                     </form>
-                                </div>
+                                    <div class="title-search-result"></div><div class="title-search-result"></div></div>
                             </div>
 
                             <div class="header__action-pa">
                                 <div class="header__action-user">
-                                    <button class="headerIcon  btn-reset">
+                                    <button class="headerIcon  btn-reset" aria-expanded="false">
                                         <svg class="icon">
-                                            <use href="../../../local/templates/pulssar/img/header-user.svg#header-user"></use>
+                                            <use href="/local/templates/pulssar/img/header-user.svg#header-user"></use>
                                         </svg>
                                     </button>
-                                    <div class="hoverDropdown" data-uk-dropdown="pos: bottom-right" style="max-width: 280px">
-                                        <a href="#auth-modal" class="btn brownBtn mb-10 w-100 uk-text-nowrap" id="auth-link" data-uk-toggle>Вход/Регистрация</a>
+                                    <div class="hoverDropdown uk-dropdown" data-uk-dropdown="pos: bottom-right" style="max-width: 280px">
+                                        <a href="#auth-modal" class="btn brownBtn mb-10 w-100 uk-text-nowrap" id="auth-link" data-uk-toggle
+                                            aria-expanded="false">Вход/Регистрация</a>
                                     </div>
                                 </div>
                                 <div class="header__action-favorite">
                                     <a href="/favorite/" class="headerFav">
                                         <svg class="icon">
-                                            <use href="../../../local/templates/pulssar/img/header-heart.svg#header-heart"></use>
+                                            <use href="/local/templates/pulssar/img/header-heart.svg#header-heart"></use>
                                         </svg>
                                     </a>
                                 </div>
@@ -203,7 +205,7 @@
                                             class="headerBAsket">
                                             <span class="counter">0</span>
                                             <svg class="icon">
-                                                <use href="../../../local/templates/pulssar/img/header-cart.svg#header-cart"></use>
+                                                <use href="/local/templates/pulssar/img/header-cart.svg#header-cart"></use>
                                             </svg>
                                         </a><!--'end_frame_cache_bx_basketFKauiI'--></div>
                                 </div>
@@ -211,16 +213,17 @@
                         </div>
                     </div>
 
-                    <div class="uk-flex  header__catalog-nav">
-                        <div class="header__catalog-nav-container">
+                    <div class="uk-flex header__catalog-nav uk-grid-margin uk-first-column">
+                        <div class="header__catalog-nav-container"
+                            style="transition: transform 380ms cubic-bezier(0.2, 0.9, 0.2, 1), box-shadow 220ms; will-change: transform;">
                             <div class="header__catalog-nav-item-main">
-                                <button href="/catalog/" class="header__catalog-nav-item catalog-nav-item" aria-expanded="true">
+                                <button href="/catalog/" class="header__catalog-nav-item catalog-nav-item" aria-expanded="false">
                                     <svg class="icon">
-                                        <use href="../../../local/templates/pulssar/img/header-catalog.svg#header-catalog"></use>
+                                        <use href="/local/templates/pulssar/img/header-catalog.svg#header-catalog"></use>
                                     </svg>
                                     <span>Каталог</span>
                                 </button>
-                                <div class="header__catalog-nav-menu" uk-dropdown="pos: bottom-justify; boundary: .menuAlign; boundary-align: true">
+                                <div class="header__catalog-nav-menu uk-dropdown" uk-dropdown="pos: bottom-justify; boundary: .menuAlign; boundary-align: true">
                                     <ul class="catalogMenu">
                                         <li><a href="/catalog/">Все товары каталога</a></li>
 
@@ -238,6 +241,9 @@
                                                 </li>
                                                 <li>
                                                     <a href="/catalog/lyustry/lyustry_reechnye/">Люстры реечные</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/catalog/lyustry/kaskadnye/">Каскадные люстры</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -317,7 +323,9 @@
 
                             <div id="title-search" class="bx-searchtitle" style="flex:1;align-self: baseline;">
                                 <form action="/search/index.php" class="uk-search uk-search-default">
-                                    <button class="uk-search-icon-flip" type="submit" name="s" uk-search-icon></button>
+                                    <button class="uk-search-icon-flip uk-icon uk-search-icon" type="submit" name="s" uk-search-icon><svg width="20" height="20"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9"
+                                                r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></button>
                                     <input id="title-search-input" class="uk-search-input" type="search" placeholder="Введите название товара или артикул" name="q"
                                         autocomplete="off" value>
                                 </form>
@@ -335,12 +343,12 @@
                         </div>
                     </div>
 
-                    <div class="uk-width-1-1 uk-flex-middle uk-flex-between uk-grid-small uk-hidden@s  header__menu-mobile" data-uk-grid>
+                    <div class="uk-width-1-1 uk-flex-middle uk-flex-between uk-grid-small uk-hidden@s header__menu-mobile uk-grid uk-grid-stack" data-uk-grid>
                         <div class="header__menu-mobile-container">
                             <div class="header__menu-mobile-item-main">
-                                <a href="/catalog/" class="header__menu-mobile-item" data-uk-toggle="target: #mobileMenu">
+                                <a href="/catalog/" class="header__menu-mobile-item" data-uk-toggle="target: #mobileMenu" aria-expanded="false">
                                     <svg class="icon">
-                                        <use href="../../../local/templates/pulssar/img/header-catalog.svg#header-catalog"></use>
+                                        <use href="/local/templates/pulssar/img/header-catalog.svg#header-catalog"></use>
                                     </svg>
                                     <span>Каталог</span>
                                 </a>
@@ -357,7 +365,7 @@
                     <div class="social_box_fixed"
                         style="position: absolute; top: 100%;margin-top:0; display: none; background: rgb(255, 255, 255); width: 100%; left: 0px; flex-flow: column wrap; border: 1px solid rgb(208, 165, 103); align-items: flex-start; padding: 5px 20px; box-sizing: border-box;">
                         <a href="https://wa.me/79267337336" target="_blank" style="display: flex; align-items: center; gap: 10px; color: #404040;"><img style="width: 40px;"
-                                src="../../../upload/dev2fun.imagecompress/webp/images/whatsapp.webp">Написать нам</a>
+                                src="/upload/dev2fun.imagecompress/webp/images/whatsapp.webp">Написать нам</a>
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <div class="fixedCallMe" style="display: block !important; position: unset; bottom: unset; right: unset; width: 40px; height: 40px;"
                                 data-uk-toggle="target: #callMeModal" tabindex="0" aria-expanded="false"></div>
@@ -1289,7 +1297,10 @@
                 <div class="footer-container">
                     <div class="footer-logo">
                         <a href="/">
-                            <img src="../../../local/templates/pulssar/img/logo-2.svg" alt>
+                            <picture>
+                                <source srcset="../../../local/templates/pulssar/img/footer-logo-mob.svg" media="(max-width: 1200.98px)">
+                                <img src="../../../local/templates/pulssar/img/footer-logo.svg" alt="Pulssar" class="logoImg">
+                            </picture>
                         </a>
                     </div>
 
@@ -1900,13 +1911,9 @@
 
                                 <li><a href="/dostavka/" class="root-item">Доставка</a></li>
 
-                                <li><a href="/news/" class="root-item">Новости</a></li>
-
                                 <li><a href="/partnerstvo/" class="root-item">Партнерство</a></li>
 
                                 <li><a href="/kontakty/" class="root-item">Контакты</a></li>
-
-                                <li><a href="/stati/" class="root-item">Статьи</a></li>
 
                                 <li><a href="/catalog/rasprodazha/">Распродажа</a></li>
                             </ul>
@@ -2687,7 +2694,7 @@
             <script src="../../../local/components/dev/form/templates/oneclick/script.js?17613004293769"></script>
             <script src="../../../local/templates/pulssar/components/slam/easyform/imgForm/bitrix/main.file.input/drag_n_drop/script.min.js?174956809617032"></script>
             <script src="../../../local/templates/pulssar/components/bitrix/catalog/catalogNew/bitrix/catalog.element/.default/script.js?17641452693765"></script>
-           <!--  <script src="../../../local/templates/pulssar/js/validation.js"></script> -->
+            <!--  <script src="../../../local/templates/pulssar/js/validation.js"></script> -->
             <script type="text/javascript">
             (function(m,e,t,r,i,k,a){
                 m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

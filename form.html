@@ -1,0 +1,124 @@
+<form class="disabled-form cart-form" novalidate>
+    <div class="cart-form-head">
+        <p class="cart-form-title">Контактная информация</p>
+        <a href="#" class="cart-form-link">Войти</a>
+    </div>
+    <div class="switch-block cart-form__toggle">
+        <div class="switch-block__tabs">
+            <div class="active" data-tab="1">Юр.лицо</div>
+            <div data-tab="2">Физ.лицо</div>
+        </div>
+        <div class="switch-block__blocks">
+            <div class="active" data-block="1">
+                <div class="form-group">
+                    <input required type="text" placeholder="Ваше имя *" class="cart-form-input">
+                </div>
+                <div class="form-group">
+                    <input required type="tel" placeholder="Номер телефона *" class="cart-form-input">
+                    <span class="error-message-2" data-error>
+                        Введите корректный номер телефона
+                    </span>
+                </div>
+                <div class="form-group">
+                    <input required type="email" placeholder="E-mail *" class="cart-form-input">
+                    <span class="error-message-2" data-error>
+                        Введите корректный email
+                    </span>
+                </div>
+            </div>
+            <div data-block="2">
+                <div class="form-group">
+                    <input required type="text" placeholder="Ваше имя *" class="cart-form-input">
+                </div>
+                <div class="form-group">
+                    <input required type="tel" placeholder="Номер телефона *" class="cart-form-input">
+                    <span class="error-message-2" data-error>
+                        Введите корректный номер телефона
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-form-head">
+        <p class="cart-form-title">Способ доставки</p>
+    </div>
+    <div class="switch-block cart-form__toggle">
+        <div class="switch-block__tabs">
+            <div data-tab="1">Самовывоз</div>
+            <div class="active" data-tab="2">Доставка</div>
+        </div>
+        <div class="switch-block__blocks">
+            <div data-block="1">
+                <div class="cart-form__text">
+                    <p>Самовывоз доступен через 2–3 рабочих дня с момента оформления заказа.</p>
+                    <ul>
+                        <li>Адрес пункта: Москва, ул. Кржижановского д 23 стр 3 офис 5</li>
+                        <li>Режим работы: Пн–Пт 10:00–18:00</li>
+                        <li>Предварительная запись не требуется</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="active" data-block="2">
+                <div class="cart-form__text">
+                    <p>
+                        Срок поставки заказных светильников составляет 5-7 недель, в зависимости от сезона
+                    </p>
+                    <p>В пределах МКАД:</p>
+                    <ul>
+                        <li>от 30 000 рублей — БЕСПЛАТНО</li>
+                        <li>до 30 000 рублей — 390 рублей</li>
+                    </ul>
+                    <p>За МКАД:</p>
+                    <ul>
+                        <li>30 рублей/1 км</li>
+                    </ul>
+                </div>
+                <div class="cart-form__address">
+                    <div class="cart-form-head delivery-methods">
+                        <p class="cart-form-title">Адрес доставки</p>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Москва" class="cart-form-input">
+                    </div>
+                    <div class="form-group">
+                        <input required type="text" placeholder="Введите адрес * " class="cart-form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="cart-form-input" rows="2"
+                            placeholder="Комментарий по доставке. Например, как найти вход, пропускная система и т.д."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-form-head">
+        <p class="cart-form-title">Способ оплаты</p>
+    </div>
+    <div class="pay-types">
+        <label class="custom-radio">
+            <input checked type="radio" name="payment-type" class="custom-radio__inp">
+            <span class="custom-radio__disc"></span>
+            <div class="ya-pay-example">
+                <img src="img/ya-pay-ex.svg" alt>
+            </div>
+        </label>
+        <label class="custom-radio">
+            <input type="radio" name="payment-type" class="custom-radio__inp">
+            <span class="custom-radio__disc"></span>
+            <span class="custom-radio__name">Оплата по счету</span>
+        </label>
+    </div>
+    <div class="form-group">
+        <div class="accept-politics">
+            <label class="custom-checkbox">
+                <input required type="checkbox" class="required">
+                <span class="checkbox-box"></span>
+            </label>
+            <p>Я соглашаюсь <span><a href="#" target="_blank">c политикой обработки персональных данных</a></span></p>
+        </div>
+        <span data-error>Требуется согласие</span>
+    </div>
+    <button class="place-order-btn" type="submit">
+        Оформить заказ
+    </button>
+</form>

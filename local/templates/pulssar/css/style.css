@@ -1,0 +1,57 @@
+.header-logo {
+    min-width: 150px;
+}
+.header-logo:hover {
+    background: url('../img/header-logo-mob-hover.svg') left center/contain no-repeat;
+}
+.header-logo:hover img {
+    visibility: hidden;
+}
+.footer-logo {
+   height: auto!important;
+}
+.footer-logo a {
+    display: inline-block;
+}
+@media (min-width: 960px) {
+    .header-logo:hover {
+        background-image: url('../img/header-logo-hover.svg');
+    }
+    .design2024 .header__grid {
+        justify-content: space-between;
+    }
+    .design2024 .header__logo {
+        min-width: 0% !important;
+        width: 325px !important
+    }
+    .design2024 .header__logo img {
+        width: 100% !important;
+    }
+    .design2024 .header__info {
+        min-width: 0 !important;
+        width: calc(100% - 325px - 40px) !important;
+        flex: 1 1 auto;
+    }
+    .design2024 .uk-navbar-nav {
+        gap: 24px;
+    }
+}
+@media (min-width: 1427px) {
+    .design2024 .header__logo {
+        width: clamp(20%, 20vw, 26%) !important
+    }
+    .design2024 .header__info {
+        width: auto !important;
+    }
+}
+@media (min-width: 1500px) {
+    .design2024 .header__logo {
+        width: clamp(20%, 23vw, 26%) !important
+    }
+}
+@media (max-width: 1200px) {
+    .footer-logo {
+        width: 100%;
+        max-width: 465px;
+    }
+}
