@@ -38,7 +38,7 @@
 }
 @media (min-width: 1427px) {
     .design2024 .header__logo {
-        width: clamp(20%, 20vw, 26%) !important
+        width: clamp(18%, 19.2vw, 26%) !important
     }
     .design2024 .header__info {
         width: auto !important;
