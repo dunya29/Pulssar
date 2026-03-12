@@ -205,7 +205,9 @@ input+[data-error] {
     display: inline-block;
 }
 .timePopup .btn {
+    color:#fff;
     background: none;
+    margin: 0 auto;
 }
 .main-modal {
     box-sizing: border-box;
