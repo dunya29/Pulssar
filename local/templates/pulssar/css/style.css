@@ -412,21 +412,17 @@ input[type=tel]:focus+.inputName, input[type=tel]:active+.inputName {
         font-size: 14px;
     }
 }
+@media (max-width: 1450px) {
+    .product-item-badges__img {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+}
 @media (max-width: 1200px) {
     .footer-logo {
         width: 100%;
         max-width: 465px;
-    }
-}
-@media (max-width: 900px) {
-    .product-item-badges__img {
-        width: 120px;
-        height: 120px;
-        padding: 10px;
-    }
-    .product-item-badges__img--small {
-        width: 100px;
-        height: 100px;
     }
 }
 @media (max-width: 767.98px) {
@@ -445,5 +441,11 @@ input[type=tel]:focus+.inputName, input[type=tel]:active+.inputName {
     .product-item-badges__img {
         width: 100px;
         height: 100px;
+    }
+}
+@media (max-width: 450px) {
+    .product-item-badges__img {
+        width: 80px;
+        height: 80px;
     }
 }
