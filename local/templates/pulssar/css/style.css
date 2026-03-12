@@ -204,7 +204,7 @@ input+[data-error] {
 .footer-logo a {
     display: inline-block;
 }
-.timePopup button {
+.timePopup button.btn {
     color:#fff;
     display: flex;
     background: none;
