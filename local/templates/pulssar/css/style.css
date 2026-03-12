@@ -204,13 +204,8 @@ input+[data-error] {
 .footer-logo a {
     display: inline-block;
 }
-.timePopup .brownBtn {
-    font-size: 20px;
-    font-weight: 600;
-    width: 100%;
-    max-width: 421px;
-    padding: 21px 10px;
-    margin-top: 20px;
+.timePopup .btn {
+    background: none;
 }
 .main-modal {
     box-sizing: border-box;
@@ -337,16 +332,24 @@ input[type=tel]:focus+.inputName, input[type=tel]:active+.inputName {
     font-size: 14px;
     text-align: left;
 }
-.select-configuration-card-img {
-    flex-shrink: 0;
-    width: 216px;
-    height: 216px;
-    max-width: none !important;
-    max-height: none !important;
+.product-item-badges__img+.product-item-badge {
+    display: none;
 }
-.select-configuration-card-img img {
+.product-item-badges__img {
+    width: 140px;
+    height: 140px;
+    padding: 14px;
+    box-sizing: border-box;
+}
+.product-item-badges__img--small {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+.product-item-badges__img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 @media (min-width: 960px) {
     .header-logo:hover {
@@ -398,18 +401,6 @@ input[type=tel]:focus+.inputName, input[type=tel]:active+.inputName {
         width: clamp(20%, 21.3vw, 26%) !important
     }
 }
-@media (max-width: 1900px) {
-    .select-configuration-card-img {
-        width: 170px;
-        height: 170px;
-    }
-}
-@media (max-width: 1750px) {
-    .timePopup .brownBtn {
-        font-size: 16px;
-        padding: 13px 10px;
-    }
-}
 @media (max-width: 1500px) {
     .custom-radio__name {
         font-size: 14px;
@@ -421,27 +412,21 @@ input[type=tel]:focus+.inputName, input[type=tel]:active+.inputName {
         font-size: 14px;
     }
 }
-@media (max-width: 1450px) {
-    .select-configuration-card-img {
-        width: 118px;
-        height: 118px;
-    }
-}
-@media (max-width: 1250px) {
-    .select-configuration-card-img {
-        width: 167px;
-        height: 167px;
-    }
-}
 @media (max-width: 1200px) {
     .footer-logo {
         width: 100%;
         max-width: 465px;
     }
 }
-@media (max-width: 830px) {
-    .timePopup .brownBtn {
-        font-size: 14px;
+@media (max-width: 900px) {
+    .product-item-badges__img {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+    }
+    .product-item-badges__img--small {
+        width: 100px;
+        height: 100px;
     }
 }
 @media (max-width: 767.98px) {
@@ -456,5 +441,9 @@ input[type=tel]:focus+.inputName, input[type=tel]:active+.inputName {
     .delete-cart-item-btn {
         width: 27px;
         height: 27px;
+    }
+    .product-item-badges__img {
+        width: 100px;
+        height: 100px;
     }
 }
