@@ -43,37 +43,6 @@
         <meta name="yandex-verification" content="567d1af30f5dfd02">
         <meta name="google-site-verification" content="BpYP_GFRx29njNw5cQFXOGwQC9FG5zsiAz6AWqgft4Q">
         <meta name="facebook-domain-verification" content="6ymebu06vqd8pnst0r32zyhif7uvew">
-
-        <!-- Yandex.Metrika counter -->
-        <noscript><div><img src="../../../watch/73185025" style="position:absolute; left:-9999px;" alt></div></noscript>
-        <!-- /Yandex.Metrika counter -->
-
-        <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
- "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Москва, Россия",
-    "streetAddress": "ул. Кржижановского, 23, к.3"
-  },
-  "name": "Pulssar",
-  "url": "https://pulssar.ru/",
-  "logo": "https://pulssar.ru/local/templates/pulssar/img/logo.svg",
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "telephone": "84950212119",
-    "contactType": "customer service",
-    "contactOption": "TollFree",
-    "areaServed": "RU",
-    "availableLanguage": "Russian"
-  },{
-    "@type": "ContactPoint",
-    "email": "office@pulssar.ru"
-  }]
-}
-</script>
-
     </head>
     <body class="design2024 innerPages">
 
@@ -2204,10 +2173,10 @@
         }
 
         .popup-content {
-            padding: 0;
+            padding: 0 20px;
+            width: 85%;
             text-align: center;
             max-width: 1200px;
-            width:100%;
             margin: 20px;
             position: relative;
         }
@@ -2215,12 +2184,13 @@
         .popup-image {
             max-width: 100%;
             height: auto;
+            max-height: 80vh;
         }
 
         .popup-close {
             position: absolute;
-            top: -40px;
-            right: -40px;
+            top: 0;
+            right: -20px;
             background: #fff;
             border: none;
             border-radius: 50%;
@@ -2234,21 +2204,19 @@
         }
     </style>
 
-            <div id="timePopup" class="popup-overlay">
+            <div id="timePopup" class="timePopup popup-overlay">
                 <div class="popup-content">
                     <button class="popup-close" onclick="closePopup()">×</button>
-
-                    <a href="/catalog/rasprodazha/" target="_blank">
-
-                        <img id="popup_img_d_m" src="../../../upload/dev2fun.imagecompress/webp/iblock/51e/csndc2hz91hvxzwk7jb9htneo3ma2g1i.webp" alt="Специальное предложение"
+                    <a href="#" target="_blank">
+                        <img id="popup_img_d_m" src="../../../img/timepopup.webp"
+                            alt="Специальное предложение"
                             class="popup-image">
-
                     </a>
-
-                    <a class="btn" style="color:#fff;" href="/catalog/rasprodazha/" target="_blank">Освобождаем склад, скидки до 50%</a>
+                    <button class="btn brownBtn mod-open-btn" data-modal="feedback-modal">
+                        заполнить форму
+                    </button>
                 </div>
             </div>
-
             <script data-skip-moving="true">
 
         // Функции для работы с cookies
@@ -2288,9 +2256,9 @@
             const screenWidth = window.innerWidth;
 
             if (screenWidth > 800) {
-                image.src = "/upload/dev2fun.imagecompress/webp/iblock/51e/csndc2hz91hvxzwk7jb9htneo3ma2g1i.webp"; // для больших экранов
+                image.src = "../../../img/timepopup.webp"; // для больших экранов
             } else {
-                image.src = "/upload/dev2fun.imagecompress/webp/iblock/542/bhjuie3fhq6ccyi5r7c0or0vjmachy3b.webp"; // для маленьких экранов
+                image.src = "../../../img/timepopup.webp"; // для маленьких экранов
             }
         }
 
@@ -2572,6 +2540,42 @@
                     </div>
                 </div>
             </div>
+            <!--feedback-modal-->
+            <div class="main-modal" id="feedback-modal">
+                <div class="main-modal__content">
+                    <button class="close-btn main-modal-close"></button>
+                    <div class="h2 main-modal__title">Заполнить форму обратной связи</div>
+                    <form class="disabled-form feedback-form" onsubmit="event.preventDefault();formReset(this,true);closeModal(document.getElementById('feedback-modal'))">
+                        <div class="inputGroup">
+                            <input type="text" name="p_name" class="uk-input" required data-required data-validate-msg="Поле обязательно для заполнения">
+                            <label for class="inputName">Ваше имя *</label>
+                        </div>
+                        <div class="inputGroup">
+                            <input type="tel" name="p_phone" class="uk-input" required data-required data-validate-msg="Поле обязательно для заполнения">
+                            <label for class="inputName">Номер телефона *</label>
+                        </div>
+                        <div class="inputGroup textarea">
+                            <textarea name="p_text" rows="3" class="uk-textarea"></textarea>
+                            <label for class="inputName">Комментарий</label>
+                        </div>
+                        <div class="file-form">
+                            <label>
+                                <input type="file" accept=".png,.jpg,.jpeg,.pdf">
+                                <span>Прикрепить файл</span>
+                            </label>
+                            <div class="file-form__items"></div>
+                            <div data-error></div>
+                        </div>
+                        <button type="submit" class="btn brownBtn w-100">Отправить</button>
+                        <p class="policy">
+                            <label class="policy_label">
+                                <input type="checkbox" class="policy_ch" id="POLICY1" name="POLICY1" required>
+                                <span>Я соглашаюсь с <a href="#" target="_blank">политикой обработки персональных данных</a></span>
+                            </label>
+                        </p>
+                    </form>
+                </div>
+            </div>
             <script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
             <script>(window.BX||top.BX).message({"JS_CORE_LOADING":"Загрузка...","JS_CORE_NO_DATA":"- Нет данных -","JS_CORE_WINDOW_CLOSE":"Закрыть","JS_CORE_WINDOW_EXPAND":"Развернуть","JS_CORE_WINDOW_NARROW":"Свернуть в окно","JS_CORE_WINDOW_SAVE":"Сохранить","JS_CORE_WINDOW_CANCEL":"Отменить","JS_CORE_WINDOW_CONTINUE":"Продолжить","JS_CORE_H":"ч","JS_CORE_M":"м","JS_CORE_S":"с","JSADM_AI_HIDE_EXTRA":"Скрыть лишние","JSADM_AI_ALL_NOTIF":"Показать все","JSADM_AUTH_REQ":"Требуется авторизация!","JS_CORE_WINDOW_AUTH":"Войти","JS_CORE_IMAGE_FULL":"Полный размер"});</script><script
                 src="../../../bitrix/js/main/core/core.min.js?1756786977229643"></script><script>BX.Runtime.registerExtension({"name":"main.core","namespace":"BX","loaded":true});</script>
@@ -2677,6 +2681,7 @@
             window.counters = ["73185025"];
         </script><script>window[window.dataLayerName] = window[window.dataLayerName] || [];</script>
 
+            <script src="../../../bitrix/components/slam/easyform/lib/js/inputmask.js?1629895785177292"></script>
             <script src="../../../local/templates/pulssar/js/uikit.min.js?1757431663135663"></script>
             <script src="../../../local/templates/pulssar/js/swiper-bundle.min.js?1749568096151701"></script>
             <script src="../../../local/templates/pulssar/js/scriptNew.min.js?176414526956136"></script>
@@ -2689,12 +2694,11 @@
             <script src="../../../local/templates/pulssar/components/bitrix/sale.basket.basket.line/basketSmall/script.min.js?17495680963876"></script>
             <script src="../../../bitrix/components/slam/easyform/lib/js/bootstrap.min.js?16298957857670"></script>
             <script src="../../../bitrix/components/slam/easyform/lib/js/bootstrapValidator.min.js?1629895785103245"></script>
-            <script src="../../../bitrix/components/slam/easyform/lib/js/inputmask.js?1629895785177292"></script>
             <script src="../../../bitrix/components/slam/easyform/script.js?162989578515074"></script>
             <script src="../../../local/components/dev/form/templates/oneclick/script.js?17613004293769"></script>
             <script src="../../../local/templates/pulssar/components/slam/easyform/imgForm/bitrix/main.file.input/drag_n_drop/script.min.js?174956809617032"></script>
             <script src="../../../local/templates/pulssar/components/bitrix/catalog/catalogNew/bitrix/catalog.element/.default/script.js?17641452693765"></script>
-            <!--  <script src="../../../local/templates/pulssar/js/validation.js"></script> -->
+            <!--  --><script src="../../../local/templates/pulssar/js/main.js"></script>
             <script type="text/javascript">
             (function(m,e,t,r,i,k,a){
                 m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
